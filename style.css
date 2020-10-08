@@ -1,0 +1,43 @@
+body{
+    background-color: #202020;
+}
+
+img {
+    max-width: 250px;
+    max-height: 100px;
+
+
+
+}
+
+.navLinks{
+    text-decoration: none;
+    color: white;
+    padding:10px;
+}
+
+.heading{
+    display: grid;
+    grid-template-columns: repeat(3 , 50px);
+    grid-template-rows: auto;
+
+    
+}
+
+
+.logo{
+    grid-column:1 ;
+    grid-row: 1;
+    
+}
+
+.Container{
+    grid-column:2 ;
+    grid-row: 1;
+    padding-top: 20px;
+}
+
+.searchBar{
+    grid-column:3 ;
+    grid-row: 1;
+}
