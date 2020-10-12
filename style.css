@@ -1,43 +1,94 @@
 body{
     background-color: #202020;
+    margin: 0;
+    color: white;
 }
 
 img {
     max-width: 250px;
     max-height: 100px;
-
-
-
 }
+
+                       /*<!--Main-->*/
 
 .navLinks{
     text-decoration: none;
     color: white;
-    padding:10px;
+
 }
 
-.heading{
+.main{
     display: grid;
-    grid-template-columns: repeat(3 , 50px);
-    grid-template-rows: auto;
-
-    
+    align-content: center;    
 }
-
 
 .logo{
-    grid-column:1 ;
-    grid-row: 1;
+    padding-top: 10px;
+    margin: 15px;
     
 }
 
-.Container{
-    grid-column:2 ;
-    grid-row: 1;
-    padding-top: 20px;
+.menuBar{
+    display: inline-grid;
+    grid-template-columns: repeat(5 , 50px);   
+    grid-template-rows: auto;
+    grid-gap: 50px;
+    padding-left:10px ;
+    padding-top: 50px;
 }
 
 .searchBar{
-    grid-column:3 ;
-    grid-row: 1;
+    grid-column-start:4 ;
+    padding-top: 50px;
 }
+
+                                /*Sub_Heading*/
+       
+.heading{
+     display: grid;
+     grid-template-columns: 15% auto;
+}
+
+.subHeading{
+    display: grid;
+    grid-column-start:2 ;
+    grid-template-columns: 20% 20% auto;
+    grid-auto-flow: column;
+    text-decoration: none;
+    color: white;
+
+}
+
+.navLink2 , .navLink1{
+    text-decoration: none;
+    color: white;
+
+}
+
+                           /*Content*/
+
+.img1 , .img2 , .img3 , .img4{
+     min-width: 100%;
+     min-height: 100%;
+} 
+.content{
+    display: grid;
+    grid-gap: 10px;
+}
+
+.content1{
+    display: grid;
+    height: 150px;
+    margin: 0 15%;
+    grid-auto-flow: column;
+}
+
+.content2{
+    display: grid;
+    height: 100%;
+    grid-auto-flow: column;
+    margin: 10px 15%;
+    grid-gap: 15px;
+}
+
+  
