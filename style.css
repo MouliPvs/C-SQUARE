@@ -3,13 +3,11 @@ body{
     margin: 0;
     color: white;
 }
-
-img {
-    max-width: 250px;
-    max-height: 100px;
-}
-
-                       /*<!--Main-->*/
+                       /*<!--Main-->*/                       
+.main{
+display: grid;
+grid-template-columns: 22% 10% 40% 10% auto;
+}   
 
 .navLinks{
     text-decoration: none;
@@ -17,29 +15,27 @@ img {
 
 }
 
-.main{
-    display: grid;
-    align-content: center;    
-}
-
-.logo{
-    padding-top: 10px;
-    margin: 15px;
-    
+div.logo{
+    background-image: url("C\ SQAURE\ logo1.0.png");
+    background-repeat: no-repeat;
+    background-size: contain;   
+    width: 250px; 
+    height: 70px;
+    margin: 15px 0 0 15px;
 }
 
 .menuBar{
     display: inline-grid;
+    grid-column: 3;
     grid-template-columns: repeat(5 , 50px);   
     grid-template-rows: auto;
     grid-gap: 50px;
-    padding-left:10px ;
-    padding-top: 50px;
+    margin-top: 45px;
 }
 
 .searchBar{
-    grid-column-start:4 ;
-    padding-top: 50px;
+    grid-column:5 ;
+    margin-top: 45px;
 }
 
                                 /*Sub_Heading*/
@@ -54,41 +50,50 @@ img {
     grid-column-start:2 ;
     grid-template-columns: 20% 20% auto;
     grid-auto-flow: column;
-    text-decoration: none;
-    color: white;
-
-}
-
-.navLink2 , .navLink1{
-    text-decoration: none;
-    color: white;
 
 }
 
                            /*Content*/
 
+
 .img1 , .img2 , .img3 , .img4{
-     min-width: 100%;
-     min-height: 100%;
-} 
-.content{
-    display: grid;
-    grid-gap: 10px;
-}
+    background-repeat: no-repeat;
+    background-size: cover; 
 
-.content1{
-    display: grid;
-    height: 150px;
-    margin: 0 15%;
-    grid-auto-flow: column;
-}
-
-.content2{
-    display: grid;
+}                           
+.img1{
+    background-image: url("tech.jpg");
+    width: 70%;
     height: 100%;
-    grid-auto-flow: column;
-    margin: 10px 15%;
-    grid-gap: 15px;
+    max-height: 355px;
+    margin: auto;
+    margin-bottom: 25px;
 }
 
-  
+.img2{
+    background-image: url("arduino.jpg");
+    width: 300px;
+    height: 150px;
+    grid-column:2 ;
+    border: 1px solid red;
+}
+
+
+.img3{
+    background-image: url("code.jpg");
+    width:300px;
+    height: 150px;
+    grid-column:3 ;
+}
+
+.img4{
+    background-image: url("iot.jpg");
+    width:300px;
+    height: 150px;
+    grid-column:4 ;
+}
+
+.content{
+  display: grid;
+  grid-template-columns: 15% auto auto auto 15%;
+}
