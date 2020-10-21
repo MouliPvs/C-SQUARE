@@ -1,12 +1,16 @@
+*{
+    box-sizing: border-box;
+}
 body{
     background-color: #202020;
     margin: 0;
     color: white;
+    font-family: 'Roboto', sans-serif;
 }
                        /*<!--Main-->*/                       
 .main{
 display: grid;
-grid-template-columns: 22% 10% 40% 10% auto;
+grid-template-columns: auto;
 }   
 
 .navLinks{
@@ -16,84 +20,186 @@ grid-template-columns: 22% 10% 40% 10% auto;
 }
 
 div.logo{
+    display: grid;
     background-image: url("C\ SQAURE\ logo1.0.png");
     background-repeat: no-repeat;
-    background-size: contain;   
+    background-size: contain; 
+    justify-content: start;  
     width: 250px; 
     height: 70px;
+    max-width: 100%;
+    max-height: 100%;
     margin: 15px 0 0 15px;
 }
 
 .menuBar{
     display: inline-grid;
-    grid-column: 3;
-    grid-template-columns: repeat(5 , 50px);   
-    grid-template-rows: auto;
-    grid-gap: 50px;
+    grid-column: 2;
+    grid-auto-flow: column;
+    grid-gap: 45px;
     margin-top: 45px;
+    justify-content: center;
 }
 
 .searchBar{
-    grid-column:5 ;
-    margin-top: 45px;
+    display: grid;
+    justify-content: end;
+    grid-column:3 ;
+    margin: 45px 7px 15px 15px;
+
 }
 
                                 /*Sub_Heading*/
        
 .heading{
      display: grid;
-     grid-template-columns: 15% auto;
+    justify-content: center;
 }
 
-.subHeading{
-    display: grid;
-    grid-column-start:2 ;
-    grid-template-columns: 20% 20% auto;
-    grid-auto-flow: column;
-
+.recent{
+    text-decoration: none;
+    color: white;
 }
 
+.mostpopular{
+    text-decoration: none;
+    color: white;
+    margin-left: 15vw;
+}
                            /*Content*/
 
 
-.img1 , .img2 , .img3 , .img4{
+.img1 , .img11 , .img12 , .img2 , .img3 , .img4{
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
+    max-width: 100%; 
 
-}                           
+}                           /*2.7 Aspect Ratio*/
+.slidecontainer{
+    position: relative;
+    max-width: 1000px;
+    max-height: 350px;
+    margin: auto;
+}
+
+.img1, .img11, .img12{
+    position: relative;
+    width: 958px;
+    height: 350px;
+    max-width: 1000px;
+    max-height: 350px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
 .img1{
     background-image: url("tech.jpg");
-    width: 70%;
-    height: 100%;
-    max-height: 355px;
-    margin: auto;
-    margin-bottom: 25px;
 }
 
+.img11{
+    background-image: url("img_mountains_wide.jpg");
+}
+
+.img12{
+    background-image: url("img_nature_wide.jpg");
+}
+
+
+.topic1 {
+    color: black;
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+.matter1{
+    position: absolute;
+    font-size: 1.5vw;
+    color: black;
+    text-align: center;
+    left: 0;
+    bottom: 10px;
+    
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    color:black;
+    font-size: 3vw;
+    margin-top: -70px;
+    padding: 25px;
+    user-select: none;
+}
+
+.next{
+    right: 0;
+}
+
+.dotter{
+    margin-bottom: 10px;
+}
+
+.dot{
+    display: inline-block;
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    background-color:#bbb;
+    border-radius: 50%;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+  }
+
+.img2 , .img3 , .img4{
+    width: 315px;
+    height: 210px;
+    max-width: 100%;
+    max-height: 100%;
+}
+                                       /*1.7 Aspect Ratio*/
 .img2{
+    position: relative;
     background-image: url("arduino.jpg");
-    width: 300px;
-    height: 150px;
-    grid-column:2 ;
-    border: 1px solid red;
+    grid-column:1;
 }
 
+.topic2, .topic3 , .topic4{
+    color: black;
+    margin: auto;
+    text-align: center;
+    font-size: 2vw;
+}
 
+.matter2, .matter3 , .matter4{
+    position: absolute;
+    font-size: 1.2vw;
+    color: black;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+}
+
+                                    /*1.5 Aspect Ratio*/
 .img3{
+    position: relative;
     background-image: url("code.jpg");
-    width:300px;
-    height: 150px;
-    grid-column:3 ;
+    grid-column:2;
 }
 
+                                   /*1.5 Aspect Ratio*/
 .img4{
+    position: relative;
     background-image: url("iot.jpg");
-    width:300px;
-    height: 150px;
-    grid-column:4 ;
+    grid-column:3;
 }
+
 
 .content{
   display: grid;
-  grid-template-columns: 15% auto auto auto 15%;
+  grid-template-columns:  315px 315px 315px;
+  grid-gap: 9px;
+  justify-content: center;
 }

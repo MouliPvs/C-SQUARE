@@ -1,9 +1,12 @@
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
 
         </title>
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
     </head>
     <body>
         <div class="main">     
@@ -15,7 +18,7 @@
             <nav class="menuBar">    
                 <a href="" class="navLinks">Home</a>
                 <a href="" class="navLinks">AboutUs</a>
-                <a href=""class="navLinks">ContactUs</a>
+                <a href="" class="navLinks">ContactUs</a>
                 <a href="" class="navLinks">Profile</a>
                 <a href="" class="navLinks">Categories</a>
             </nav> 
@@ -32,20 +35,53 @@
                      <!--SUB_HEADINGS-->
          <nav class="Heading">
              <div class="subHeading">
-               <a href=""  class="navLinks">Recent</a>
-              <a href="" class="navLinks">Most Popular</a>
+               <a href="" class="recent">Recent</a>
+              <a href=""  class="mostpopular">Most Popular</a>
             </div>
          </nav>
-         <hr width="70%">
-         <br>
-                      <!--Content-->
-         <div class="img1"></div>
-         
+         <hr width="958px">
+
+            <!--Content-->
+            <div class="slideContainer">
+                <div class="mySlides img1">
+                    <h1 class="topic1">Radar Using Arduino</h1>
+                    <span class="matter1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dignissimos!</span>
+                </div>
+                
+                <div class="mySlides img11">
+                    <h1 class="topic1">Radar Using Arduino</h1>
+                    <span class="matter1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dignissimos!</span>
+                </div>
+    
+                <div class="mySlides img12">
+                    <h1 class="topic1">Radar Using Arduino</h1>
+                    <span class="matter1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dignissimos!</span>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>          
+    
+          <div style="text-align:center" class="dotter">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+          </div>
+
          <div class="content">
-         <div class="img2"></div>
-         <div class="img3"></div>
-         <div class="img4"></div>   
+         <div class="img2">
+             <h1 class="topic2">Radar Using Arduino</h1>
+             <span class="matter2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dignissimos!</span>
+        </div>
+         <div class="img3">
+             <h1 class="topic3">Radar Using Arduino</h1>
+             <span class="matter3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dignissimos!</span>
+        </div>
+         <div class="img4">
+             <h1 class="topic4">Radar Using Arduino</h1>
+             <span class="matter4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dignissimos!</span>
+        </div>   
         </div>
 
     </body>
+    <script src="script.js"></script>
 </html>
