@@ -45,7 +45,7 @@ div.logo{
     display: grid;
     justify-content: end;
     grid-column:3 ;
-    margin: 45px 7px 15px 15px;
+    margin: 45px 7px 15px 25px;
 
 }
 
@@ -143,10 +143,11 @@ div.logo{
 .dot{
     display: inline-block;
     cursor: pointer;
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 6px;
     background-color:#bbb;
-    border-radius: 50%;
+    border-radius: 3px;
+
 }
 
 .active, .dot:hover {
@@ -154,52 +155,40 @@ div.logo{
   }
 
 .img2 , .img3 , .img4{
-    width: 315px;
-    height: 210px;
-    max-width: 100%;
-    max-height: 100%;
+    width: 500px;
+    height: 294px;
 }
                                        /*1.7 Aspect Ratio*/
-.img2{
-    position: relative;
-    background-image: url("arduino.jpg");
-    grid-column:1;
-}
-
-.topic2, .topic3 , .topic4{
-    color: black;
-    margin: auto;
-    text-align: center;
-    font-size: 2vw;
-}
-
-.matter2, .matter3 , .matter4{
-    position: absolute;
-    font-size: 1.2vw;
-    color: black;
-    text-align: center;
-    left: 0;
-    bottom: 0;
-}
-
-                                    /*1.5 Aspect Ratio*/
-.img3{
-    position: relative;
-    background-image: url("code.jpg");
-    grid-column:2;
-}
-
-                                   /*1.5 Aspect Ratio*/
-.img4{
-    position: relative;
-    background-image: url("iot.jpg");
-    grid-column:3;
-}
 
 
 .content{
-  display: grid;
-  grid-template-columns:  315px 315px 315px;
-  grid-gap: 9px;
-  justify-content: center;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 500px 500px;
+    grid-gap: 10px;
+ }
+
+.content1{
+    width: 500px;
+    height: 294px;
+    text-align: center;
 }
+
+.topic2{
+    margin-top: -5px;
+    font-size: 1.8vw;
+}
+
+.img2{ 
+    background-image: url("iot.jpg");
+}
+                                    /*1.5 Aspect Ratio*/
+.img3{
+    background-image: url("code.jpg");
+}
+                                   /*1.5 Aspect Ratio*/
+.img4{
+    background-image: url("arduino.jpg");
+}
+
+
